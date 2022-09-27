@@ -1,0 +1,432 @@
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+    background-image: url('https://fbo.de/wp-content/themes/fbo/assets/img/bg-polygons.png');
+    color: #565655;
+}
+
+video {
+    pointer-events: none;
+    min-width: 100%;
+    position: absolute;
+    -o-object-fit: cover;
+    object-fit: cover;
+    height: 500px;
+}
+
+
+
+a {
+    color: #565655;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-left: 8px;
+    margin-right: 8px;
+    font-weight: 600;
+    z-index: 2;
+}
+
+/* 
+iframe {
+    pointer-events: none;
+} */
+
+a:hover {
+    text-decoration: underline 3px red;
+    text-underline-offset: 52px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(100% - 64px);
+    font-size: 1.2em;
+    padding-left: 32px;
+    padding-right: 32px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    z-index: 1001;
+    height: 128px;
+}
+
+
+
+
+.progress-container {
+    position: absolute;
+    bottom: 0;
+    left: 32px;
+    right: 64px;
+    width: 94.5%;
+    height: 3px;
+    background: white;
+    z-index: 1;
+  }
+  
+
+  .progress-bar {
+    height: 3px;
+    background: #E30211;
+    width: 0%;
+  }
+
+nav {
+    display: flex;
+    align-items: center,
+}
+
+nav a {
+    margin-right: 24px;
+    font-size: 22px;
+}
+
+.site-content {
+    margin: 16px;
+}
+
+.menu {
+    position: absolute;
+    height: 24px;
+    right: 16px;
+    top: 40%;
+    opacity: 0;
+
+    cursor: pointer;
+}
+
+.header-wrapper {
+    background: white;
+
+}
+
+
+.header-logo {
+    cursor: pointer;
+    height: 80px;
+}
+
+.search-icon {
+    cursor: pointer;
+    height: 32px;
+    margin-left: 8px;
+}
+
+.video-box {
+    margin-top: 128px;
+    position: relative;
+    height: 500px;;
+}
+
+.video-overlay {
+    padding: 32px;
+    z-index: 2;
+    position: absolute;
+    color: white;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 500px;
+
+}
+
+.animation {
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    visibility: visible !important;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.overlay-text {
+    max-width: 750px;
+}
+
+.select-1 {
+    border: 1px solid white;
+    height: 24px;
+    width: 24px;
+    border-radius: 32px;
+    position: absolute;
+    left: 8px;
+    bottom: 72px;
+    cursor: pointer;
+}
+
+.select-2 {
+    border: 1px solid white;
+    cursor: pointer;
+    height: 24px;
+    width: 24px;
+    border-radius: 32px;
+    position: absolute;
+    left: 40px;
+    bottom: 72px;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.headline {
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 0;
+}
+
+.subline {
+    margin-top: 0;
+}
+
+.see-video-btn {
+    background: transparent;
+    padding: 10px 20px;
+    border-radius: 32px;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    border: 1px solid white;
+    width: fit-content;
+    cursor: pointer;
+    transform: scale(1);
+    animation: button-hover;
+    animation-duration: 500ms;
+    animation-play-state: paused;
+}
+
+.content-header {
+    padding: 64px;
+}
+
+.content-header p i {
+    font-size: 21px;
+    font-weight: 300;
+}
+
+.content-header h1 {
+    font-size: 3em;
+    font-weight: 800;
+    margin-top: -8px;
+    position: relative;
+}
+
+.underline {
+    height: 3px;
+    width: 128px;
+    background-color: #E30211;
+    margin-top: 8px;
+}
+
+.content-header button {
+    color: white;
+    background-color:#E30211;
+    font-size: 24px;
+    padding: 14px 20px;
+    border-radius: 32px;
+    border: none;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.examples {
+    margin: -22px;
+    margin-bottom: 16px;
+    padding: 16px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.example-block {
+    background-size:  cover;
+    background-position: center;
+    width: calc(50% - 12px) ;
+    height: 500px;
+    margin: 6px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.example-block p,h2 {
+    color: white;
+    background-color: rgba(0,0,0, 0.7);
+    width: fit-content;
+    max-width: 70%;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.example-block h2 {
+    margin-top: -4px;
+    margin-bottom: 48px;
+}
+
+
+.footer {
+    display: flex;
+    background-color: #3D3D3D;
+    color: white;
+    padding: 32px;
+    font-weight: 300;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-address button {
+    background: transparent;
+    padding: 3px 12px;
+    border-radius: 32px;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    border: 1px solid white;
+    width: fit-content;
+    cursor: pointer;
+    margin-top: 16px;
+    font-weight: 300;
+}
+
+.footer-socials-links {
+    display: flex;
+
+}
+
+.footer-socials-links img {
+    height: 32px;
+    margin-right: 8px;
+}
+
+.footer-saarland img {
+    height: 64px;
+}
+
+.responsive-overlay {
+    background-color: #3E3E3E;
+    z-index: 1000000;
+    position: fixed;
+    top:0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.d-none {
+    display: none !important ;
+}
+
+
+
+/*show menu in responsive view*/
+
+
+
+.responsive-overlay h2 {
+    background-color: transparent !important;
+    margin: 0;
+}
+
+.r-overlay-header {
+    width: calc(100% - 32px);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 16px;
+}
+
+.hover-red:hover {
+    color:#E30211;
+    cursor: pointer;
+}
+
+
+.r-overlay-logo {
+    height: 80px;
+}
+
+.r-overlay-close {
+    height: 40px;
+    cursor: pointer;
+}
+
+
+
+
+/* .see-video-btn:hover {
+    animation-play-state: running;
+    
+} */
+
+@keyframes button-hover {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+/* responsive view */
+
+@media(max-width: 1024px) {
+    header a {
+        display: none;
+    }
+
+    .search-icon {
+        display: none;
+    }
+
+    .header-logo {
+        display: none;
+    }
+
+    .menu {
+        opacity: 1;
+        z-index: 1000000000000000 !important;
+        cursor: pointer;
+    }
+
+    .example-block {
+        width: 100%;
+    }
+
+    .site-content {
+        margin: 0;
+    }
+
+    .video-overlay {
+        justify-content: center;
+        text-align: center;
+    }
+}
